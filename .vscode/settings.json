@@ -1,3 +1,4 @@
 {
-    "terminal.integrated.fontSize": 32,
+    "terminal.integrated.fontSize": 42,
+    "editor.fontSize": 42
 }
