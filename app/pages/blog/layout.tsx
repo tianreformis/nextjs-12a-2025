@@ -13,7 +13,7 @@ export default function BlogLayout({
   return (
     // Tidak ada <html> dan <body>
     <section
-      className={`max-w-3xl mx-auto p-6 flex flex-col justify-start items-start
+      className={`w-full min-h-screen px-8 py-6
     ${poppins.className}
     `}>
       {children}
