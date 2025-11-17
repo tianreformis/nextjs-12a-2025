@@ -25,7 +25,23 @@ export const items = [
         title: 'My Fourth Post',
         date: '2024-01-01',
         categories: ['Food', 'Cooking'],
+        content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, minima cum accusantium veritatis non tempora inventore quos, corrupti unde voluptas, voluptatem ducimus quidem veniam? Eum, iste alias quod molestiae rem corrupti accusantium? Nam nihil ipsa sint tempore alias, praesentium voluptates ullam odio mollitia eius provident quaerat placeat, ducimus voluptate repellendus. lorem5000'
+    },
+    {
+        slug: 'fifth-post',
+        title: 'My Fifth Post',
+        date: '2024-01-01',
+        categories: ['Finance', 'Investing'],
         content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, minima cum accusantium veritatis non tempora inventore quos, corrupti unde voluptas, voluptatem ducimus quidem veniam? Eum, iste alias quod molestiae rem corrupti accusantium? Nam nihil ipsa sint tempore alias, praesentium voluptates ullam odio mollitia eius provident quaerat placeat, ducimus voluptate repellendus.'
+    },
+    {
+        slug: 'sixth-post',
+        title: 'My Sixth Post',
+        date: '2024-01-01',
+        categories: ['Education', 'Learning'],
+        content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, minima cum accusantium veritatis non tempora inventore quos, corrupti unde voluptas, voluptatem ducimus quidem veniam? Eum, iste alias quod molestiae rem corrupti accusantium? Nam nihil ipsa sint tempore alias, praesentium voluptates ullam odio mollitia eius provident quaerat placeat, ducimus voluptate repellendus.'
+        
     }
 
 ];
+

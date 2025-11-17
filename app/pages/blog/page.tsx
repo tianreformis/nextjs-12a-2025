@@ -5,7 +5,7 @@ import Link from "next/link";
 const BlogPage = () => {
     return (
         <div>
-            <h1 className="text-4xl font-bold mb-8">Blog Posts</h1>
+            <h1 className="text-4xl font-bold mb-8 mt-10">Blog Posts</h1>
             <div>
                 {items.map((item) => (
                     <div
