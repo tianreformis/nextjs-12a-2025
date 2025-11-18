@@ -31,20 +31,21 @@ const LoginPage = () => {
     <div className="w-lg min-h-screen bg-gray-100 flex justify-center items-center shadow-md rounded-md">
       <form onSubmit={handleLogin}>
         <h1 className="font-bold text-2xl mb-5 text-center">Login</h1>
+        {error && <p className="text-red-500 mb-3">{error}</p>}
 
         <input
           type="text"
           className="w-full border p-2 rounded mb-3"
           placeholder="Masukkan Username"
-          value=""
-          onChange=""
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
         />
         <input
           type="password"
            className="w-full border p-2 rounded mb-3"
           placeholder="Masukkan Username"
-          value=""
-          onChange=""
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
         />
         <button
           type="submit"
