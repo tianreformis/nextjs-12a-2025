@@ -1,6 +1,6 @@
 import {User} from './types.user';
 
-
+//array user namun tipe datanya sudah ditentukan di file yang berbeda
 export const users: User[] = [
     {
         id: 1,
@@ -16,4 +16,8 @@ export const users: User[] = [
     },
 ]
 
+//fungsi untuk mencari user berdasarkan array 
 export function loginUser (username : string, password : string): User | null {
+    const user = users.find((u) => u.username === username && u.password === password);
+    return user || null;
+}
