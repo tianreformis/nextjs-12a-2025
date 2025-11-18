@@ -1,6 +1,7 @@
 "use client";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { loginUser } from "../types/users";
 
 const LoginPage = () => {
   const router = useRouter();
@@ -9,8 +10,20 @@ const LoginPage = () => {
   const [error, setError] = useState("");
 
   //fungsi untuk handle login, dihubungkan ke button
-  function handleLogin(e.React.FormEvent) {
+  function handleLogin(e: React.FormEvent) {
     e.preventDefault();
+
+    //mengambil data user dari fungsi loginUser 
+    const user = loginUser(username, password);
+
+    //buat fungsi jikalau user tidak ada
+    if (!user) {
+      setError("Username atau password salah");
+      return;
+    }
+
+    //jika user ada, redirect ke halaman bog langsung
+    router.push("/pages/blog");
 
   }
 
