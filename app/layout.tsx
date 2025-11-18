@@ -22,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const pathname = usePathname(); //restructure pathname
-  const hideComponent = pathname.startsWith("/pages/blog"); 
+  const hideComponent = pathname.startsWith("/pages/blog") || pathname.startsWith("/login"); 
   return (
     <html lang="en">
       <body
