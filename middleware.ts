@@ -23,7 +23,7 @@ export function middleware(req: NextRequest) {
   return NextResponse.next();
 }
 
-// middleware hanya aktif di folder /pages
+// protected route
 export const config = {
   matcher: ["/pages/:path*"],
 };

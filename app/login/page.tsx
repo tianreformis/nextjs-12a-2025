@@ -1,4 +1,10 @@
+//login/page.tsx
+
 "use client";
+//install dulu cookies-next
+//npm install cookies-next
+import { setCookie } from "cookies-next";
+
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { loginUser } from "../types/users";
@@ -21,6 +27,11 @@ const LoginPage = () => {
       setError("Username atau password salah");
       return;
     }
+
+    setCookie("user", user.username, { 
+      expires: new Date(Date.now() + 60 * 60 * 24),
+      path: "/" }
+    );
 
     //jika user ada, redirect ke halaman bog langsung
     router.push("/pages/blog");
